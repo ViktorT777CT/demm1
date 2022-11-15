@@ -3,6 +3,9 @@
     --orange:rgba(249, 163, 108, 1);
 
 }
+body{
+    margin: 0;/* удалить при внедрении, в корне уже имеется этот стиль*/
+}
 .txt__wite{
     color: var(--wite);
 }
@@ -20,6 +23,7 @@
 .map__img{
     display: flex;
     justify-content: center;
+    line-height: 0;
 }
 .map__img>img{
     width: 60%;
@@ -35,19 +39,30 @@
 }
 .container__baner{
     background: linear-gradient(172deg, rgba(68,155,248,1) 0%, rgba(125,125,125,1) 68%);
+}
+.d_flex{
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-    position: relative;
+    height: 455px;
 }
 .baner__text{
-    width: 60%;
+    width: 70%;
 }
 .baner__img{
+    position: relative;
+}
+.baner__img>img{
+    height: 620px;
     position: absolute;
-    overflow: hidden;
-    right: 8%;
-    top: -10%;
+    top: -66px;
+    right: -50px;
+}
+.bg__color{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(234,234,234);
 }
 .number{
     display: flex;
@@ -55,8 +70,66 @@
     flex-wrap: wrap;
 }
 .number__block{
-    width: 150px;
+    width: 140px;
     display: flex;
     text-align: center;
     align-items: center;
+}
+.textcols {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.textcols-item {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	height: 30%;
+}
+.textcols-item + .textcols-item {
+	margin-left: 5%;
+}
+@media (max-width: 1200px){
+    .baner__img>img{
+        
+        right: -70px;
+    }
+}
+@media (max-width: 1100px){
+    .d_flex{
+        height: 550px;
+    }
+    .baner__img>img{
+        top: 28px;
+    }
+}
+@media (max-width: 992px){
+    .d_flex{
+        height: auto;
+    }
+    .baner__img>img{
+        position: static;
+    }
+    .baner__img>img, .baner__img, .d_flex{
+        display:block;
+    }
+    .baner__img{
+        display: flex;
+        justify-content: center;
+    }
+    .baner__text{
+        margin: auto;
+        text-align: center;
+    }
+    .textcols{
+        display: block;
+    }
+    .textcols-item + .textcols-item {
+        margin-left: 0;
+    }
+    .map__img>img {
+        width: 100%;
+    }
 }
