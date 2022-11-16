@@ -53,6 +53,7 @@ body{
     position: absolute;
     top: -66px;
     right: -50px;
+    filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.5));
 }
 .bg__color{
     padding-top: 30px;
@@ -99,6 +100,10 @@ body{
 }
 .textcols-item + .textcols-item {
 	margin-left: 5%;
+}
+.textcols-item>ul>p{
+    margin: 0;
+    margin-left: -20px;
 }
 @media (max-width: 1200px){
     .number__block{
@@ -166,4 +171,7 @@ body{
     .fs__64{
         font-size: 34px;
     }
+    .rent-font-map {
+        font-size:33px;
+        }
 }
