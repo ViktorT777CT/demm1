@@ -1,13 +1,8 @@
-:root{
-    --wite: rgba(255,255,255);
-    --orange:rgba(249, 163, 108, 1);
-
-}
 body{
     margin: 0;/* удалить при внедрении, в корне уже имеется этот стиль*/
 }
 .txt__wite{
-    color: var(--wite);
+    color: var(--white);
 }
 .txt__orenge{
     color: var(--orange);
@@ -25,8 +20,9 @@ body{
     justify-content: center;
     line-height: 0;
 }
-.map__img>img{
-    width: 60%;
+.map__img>svg{
+    width: 70%;
+    padding-top: 20px;
 }
 .fs__28{
     font-size: 28px;
@@ -72,10 +68,21 @@ body{
     flex-wrap: wrap;
 }
 .number__block{
-    width: 140px;
+    flex: 140px 1 1;
     display: flex;
+    justify-content: center;
+}
+.number__block>div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    width: 140px;
     text-align: center;
     align-items: center;
+}
+.cooperation{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .textcols {
 	display: flex;
@@ -94,6 +101,9 @@ body{
 	margin-left: 5%;
 }
 @media (max-width: 1200px){
+    .number__block{
+        flex: 25% 1 1;
+    }
     .baner__img>img{
         
         right: -70px;
@@ -108,18 +118,17 @@ body{
     }
 }
 @media (max-width: 992px){
+    .number__block{
+        flex: 33.3% 1 1;
+    }
+    .map__img>svg{
+        width: 95%;
+    }
     .d_flex{
         height: auto;
     }
-    .baner__img>img{
-        position: static;
-    }
-    .baner__img>img, .baner__img, .d_flex{
-        display:block;
-    }
     .baner__img{
-        display: flex;
-        justify-content: center;
+        display: none;
     }
     .baner__text{
         margin: auto;
@@ -133,5 +142,28 @@ body{
     }
     .map__img>img {
         width: 100%;
+    }
+    .fs__28{
+        font-size: 18px;
+    }
+    .fs__35{
+        font-size: 25px;
+    }
+    .fs__64{
+        font-size: 54px;
+    }
+    .d_flex{
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 576px){
+    .number__block{
+        flex: 50% 1 1;
+    }
+    .fs__35{
+        font-size: 20px;
+    }
+    .fs__64{
+        font-size: 34px;
     }
 }
