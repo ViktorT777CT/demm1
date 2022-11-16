@@ -11,11 +11,32 @@ body{
     width: 90%;
     margin: auto;
 }
+.mobil_city{
+    color: #449bf8;
+    font-weight:400;
+    font-size:13px;
+}
+.mobil_city:hover{
+    color: var(--white);
+    background-color: var(--orange);
+    padding: 5px;
+    border-radius: 15px;
+}
+.map_block{
+    display: flex;
+    justify-content: space-between;
+}
+.mobil_city-block{
+    width: 40%;
+    display: block;
+    text-align: center;
+}
 .map__h1{
     color:rgba(108, 117, 125, 1);
     text-align: center;
 }
 .map__img{
+    width: 100%;
     display: flex;
     justify-content: center;
     line-height: 0;
@@ -32,6 +53,15 @@ body{
 }
 .fs__64{
     font-size: 64px;
+}
+.fw_600{
+    font-weight: 600;
+}
+.fw_700{
+    font-weight: 700;
+}
+.fw_400{
+    font-weight: 400;
 }
 .container__baner{
     background: linear-gradient(172deg, rgba(68,155,248,1) 0%, rgba(125,125,125,1) 68%);
@@ -123,6 +153,17 @@ body{
     }
 }
 @media (max-width: 992px){
+    .map_block{
+        flex-direction: column;
+    }
+    .mobil_city-block{
+        order: 1;
+        width: auto;
+    }
+    .map__img{
+        width: 100%;
+        order: 2;
+    }
     .number__block{
         flex: 33.3% 1 1;
     }
@@ -171,7 +212,4 @@ body{
     .fs__64{
         font-size: 34px;
     }
-    .rent-font-map {
-        font-size:33px;
-        }
 }
