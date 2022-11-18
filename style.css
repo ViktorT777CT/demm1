@@ -87,7 +87,7 @@ span.txt__orenge{
 .d_flex{
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .bg__color{
     padding-top: 30px;
@@ -116,7 +116,6 @@ span.txt__orenge{
     align-items: center;
 }
 .cooperation{
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 .textcols {
