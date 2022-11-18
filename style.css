@@ -150,11 +150,9 @@ p>a.mobil_city{
     line-height: 32px;
 }
 img.baner__img-i{
-    height: 125%;
+    height: 100%;
     max-width: initial;
-    position: absolute;
     right: 0;
-    bottom: -50px;
     filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.5));
 }
 @media (max-width: 1200px){
