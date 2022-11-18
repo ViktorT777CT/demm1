@@ -17,12 +17,14 @@ body{
     font-size:13px;
 }
 .mobil_city:hover{
+    text-decoration: underline solid var(--white);
     color: var(--white);
     background-color: var(--orange);
     padding: 5px;
     border-radius: 15px;
 }
 .map_block{
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
 }
@@ -30,7 +32,7 @@ body{
     width: 40%;
     display: block;
     text-align: center;
-    border-left: 4px solid var(--gray);
+    border-left: 2px solid var(--gray-600);
 }
 .map__h1{
     color:rgba(108, 117, 125, 1);
@@ -68,6 +70,8 @@ body{
     font-weight: 400;
 }
 .container__baner{
+    position: relative;
+    min-height: 463px;
     background: linear-gradient(172deg, rgba(68,155,248,1) 0%, rgba(125,125,125,1) 68%);
 }
 .d_flex{
@@ -101,7 +105,7 @@ body{
     padding-bottom: 10px;
     display: flex;
     width: 140px;
-    text-align: center;
+    text-align: left;
     align-items: center;
 }
 .cooperation{
@@ -133,6 +137,7 @@ body{
     margin: 0;
 }
 p>a.mobil_city{
+    text-decoration: underline solid #449bf8;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -140,13 +145,12 @@ p>a.mobil_city{
 .mobil_city-block>p.fs__24{
     line-height: 29px;
 }
-.baner__img{
-    position: relative;
-}
-.baner__img>img{
+img.baner__img-i{
+    height: 125%;
+    max-width: initial;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -50px;
     filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.5));
 }
 @media (max-width: 1200px){
@@ -157,9 +161,15 @@ p>a.mobil_city{
 @media (max-width: 1100px){
     .d_flex{
         height: 550px;
-    }  
+    }
+    img.baner__img-i{
+        height: 100%;
+    }
 }
 @media (max-width: 992px){
+    .container__baner{
+        min-height: 100%;
+    }
     .map_block{
         flex-direction: column;
     }
@@ -178,8 +188,8 @@ p>a.mobil_city{
     }
     .d_flex{
         height: auto;
-    }
-    .baner__img{
+    }    
+    .baner__img-i{
         display: none;
     }
     .baner__text{
