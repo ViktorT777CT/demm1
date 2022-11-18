@@ -10,6 +10,9 @@ body{
 .txt__orenge{
     color: var(--orange);
 }
+span.txt__orenge{
+    padding-right: 10px;
+}
 .container{
     width: 90%;
     margin: auto;
