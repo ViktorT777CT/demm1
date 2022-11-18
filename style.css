@@ -1,6 +1,9 @@
 body{
     margin: 0;/* удалить при внедрении, в корне уже имеется этот стиль*/
 }
+.txt__grey{
+    color: var(--gray-300);
+}
 .txt__wite{
     color: var(--white);
 }
@@ -29,6 +32,7 @@ body{
     justify-content: space-between;
 }
 .mobil_city-block{
+    margin: auto;
     width: 40%;
     display: block;
     text-align: center;
@@ -143,7 +147,7 @@ p>a.mobil_city{
     line-height: 24px;
 }
 .mobil_city-block>p.fs__24{
-    line-height: 29px;
+    line-height: 32px;
 }
 img.baner__img-i{
     height: 125%;
